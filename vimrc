@@ -27,31 +27,35 @@ syntax on
 " Start NERDTree and put the cursor back in the other window.
 autocmd VimEnter * NERDTree | wincmd p
 
-" Some Configuration for PaperColor scheme
-set t_Co=256
-set background=dark
-let g:PaperColor_Theme_Options = {
-  \   'theme': {
-  \     'default.dark': {
-  \       'transparent_background': 1
-  \     }
-  \   },
-  \   'language': {
-  \     'python': {
-  \       'highlight_builtins' : 1
-  \     },
-  \     'cpp': {
-  \       'highlight_standard_library': 1
-  \     },
-  \     'c': {
-  \       'highlight_builtins' : 1
-  \     }
-  \   }
-  \ }
+"" Some Configuration for PaperColor scheme
+"set t_Co=256
+"set background=dark
+"let g:PaperColor_Theme_Options = {
+"  \   'theme': {
+"  \     'default.dark': {
+"  \       'transparent_background': 1
+"  \     }
+"  \   },
+"  \   'language': {
+"  \     'python': {
+"  \       'highlight_builtins' : 1
+"  \     },
+"  \     'cpp': {
+"  \       'highlight_standard_library': 1
+"  \     },
+"  \     'c': {
+"  \       'highlight_builtins' : 1
+"  \     }
+"  \   }
+"  \ }
 
 
 
-colorscheme PaperColor 
+"colorscheme PaperColor 
+
+"" Some Configuration for purify scheme
+packadd! purify 
+colorscheme purify 
 
 " Disable the default Vim startup message.
 set shortmess+=I
