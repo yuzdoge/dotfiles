@@ -16,8 +16,18 @@ set autoindent
 
 "set cindent
 
-" Set a tab as 4 space
+" + tabstop: set the number of SPACEs that a TAB is displayed as, and form the number
+"			 of this value of SPACEs to a TAB, the order of this parameter is higher than `softtabstop`.
+" + softtabstop: on INSERT mode, set the number of SPACEs that a TAB is expanded to.
+" + shiftwidth: set the number of SPACEs when auto indent.
+
+autocmd Filetype c setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+
+" Default
 set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set noexpandtab
 
 " Turn on syntax highlighting.
 syntax on
