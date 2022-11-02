@@ -100,9 +100,13 @@ source $OSH/oh-my-bash.sh
 # alias bashconfig="mate ~/.bashrc"
 # alias ohmybash="mate ~/.oh-my-bash"
 
+alias pxy='proxychains3'
+
 alias guidir='nautilus .'
 alias rm='rm -i'
 source $HOME/modules/build/init/bash
 source $HOME/nnn/misc/quitcd/quitcd.bash_zsh
 source $HOME/.version_ctrl.sh
 source /home/Xilinx/Vivado/2018.2/settings64.sh
+
+export PATH=$PATH:$HOME/verilator/bin
